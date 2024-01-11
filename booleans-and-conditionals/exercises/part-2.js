@@ -20,12 +20,18 @@ if (computerStatusCode === 200) {
  } else if (computerStatusCode === 400) {
     console.log("Success! Computer online.");
 } else {
-    console.log("ALERT: Computer offline!")
+    console.log("ALERT: Computer offline!");
 }
 
 // c) If shuttleSpeed is > 17,500, print "ALERT: Escape velocity reached!" Else if shuttleSpeed is < 8000, print "ALERT: Cannot maintain orbit!" Else print "Stable speed".
-
+if (shuttleSpeed > 17500) {
+    console.log("ALERT: Escape Velocity reached!");
+    } else if (shuttleSpeed < 8000) {
+        console.log("ALERT: Cannot maintain orbit!");
+    } else {
+        console.log("Stable speed");
+    }
 
 // 4) PREDICT: Do the code blocks shown in the 'predict.txt' file produce the same result?
 
-console.log(/* "Yes" or "No" */);
+console.log("No");
