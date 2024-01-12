@@ -17,20 +17,36 @@ let weatherStatus = "clear";
 let preparedForLiftOff = true;
 // add logic below to verify total number of astronauts for shuttle launch does not exceed 7
 if (astronautCount <= 7) {
-    console.log("Keep going!");
-// add logic below to verify all astronauts are ready
-} else if (astronautStatus === "ready") {
-    console.log("Ready!"); 
+preparedForLiftOff = true;
+} else if (astronautStatus != "ready") {
+    preparedForLiftOff = false; 
 // add logic below to verify the total mass does not exceed the maximum limit of 850000
-} else if (totalMassKg < maximumMassLimit) {
-    console.log("engines are preparing to start");
+} else if (totalMassKg > 850000) {
+    preparedForLiftOff = false;
 // add logic below to verify the fuel temperature is within the appropriate range of -150 and -300
-} else if (fuelTempCelsius >= -300 && fuelTempCelsius <= -150) {
-    console.log("Fuel temp is between -300 && -150");
+} if (fuelTempCelsius >= -300) {
+    preparedForLiftOff = false;
+  } else if (fuelTempCelsius <= -150) {
+    preparedForLiftOff = false;
 // add logic below to verify the fuel level is at 100%
-} else if (fuelLevel === 100) {
-    console.log("Fuel level is at 100%");
+} else if (fuelLevel != 100) {
+    preparedForLiftOff = false;
 // add logic below to verify the weather status is clear
-} else if (weatherStatus === "clear") {
-    console.log("Weather is clear!");
-// Verify shuttle launch can proceed based on above conditions//
+} else if (weatherStatus !="clear") {
+    preparedForLiftOff = false;
+}
+if (preparedForLiftOff = true) {
+ console.log("All systems are a go!");
+console.log("Date", date);
+console.log("Time", time);
+console.log("Astronaut Count", astronautCount);
+console.log("Crew Mass:", crewMassKg,"Kg");
+console.log("Fuel Mass:", fuelMassKg, "Kg");
+console.log("Shuttle Mass", fuelMassKg, "Kg");
+console.log("Total Mass:", totalMassKg, "Kg");
+console.log("Fuel Temperature", fuelTempCelsius, "C");
+console.log("Weather Status", weatherStatus);
+console.log("Have a safe flight astronauts!");
+} else{
+    console.log("Launch Cancelled")
+}
