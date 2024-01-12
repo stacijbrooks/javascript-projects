@@ -26,7 +26,7 @@ if (astronautCount <= 7) {
     console.log("engines are preparing to start");
 // add logic below to verify the fuel temperature is within the appropriate range of -150 and -300
 } else if (fuelTempCelsius >= -300 && fuelTempCelsius <= -150) {
-    console.log("Fuel temp is between -300 and -150");
+    console.log("Fuel temp is between -300 && -150");
 // add logic below to verify the fuel level is at 100%
 } else if (fuelLevel === 100) {
     console.log("Fuel level is at 100%");
