@@ -22,11 +22,19 @@ console.log(dna);
 let dnaTwo = "TCG-TAC-GAC-TAC-CGT-CAG-ACT-TAA-CCA-GTC-CAT-AGA-GCT";
 
 //1) Replace the gene "GCT" with "AGG", and then print the altered strand.
-
+dna = dna.replace('GCT' , 'AGG');
+console.log(dna);
 //2) Look for the gene "CAT" with ``indexOf()``. If found print, "CAT gene found", otherwise print, "CAT gene NOT found".
-
+if (dnaTwo.indexOf('CAT') !== -1) {
+    console.log('CAT found');
+} else {
+    console.log('CAT Not Found');
+}
 //3) Use .slice() to print out the fifth gene (set of 3 characters) from the DNA strand.
-
+console.log(dna.slice(16,19));
 //4) Use a template literal to print, "The DNA strand is ___ characters long."
-
+let lengthOfDNA = dnaTwo.length;
+console.log(`The DNA strand is ${lengthOfDNA} characters long.`);
 //5) Just for fun, apply methods to ``dna`` and use another template literal to print, 'taco cat'.
+let modifiedDNA = dnaTwo.replace('TCG', 'QCA').toLowerCase();
+console.log(`Here is your new DNA sequence: ${modifiedDNA}`);
