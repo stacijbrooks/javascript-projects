@@ -5,3 +5,4 @@ practiceFile.push(42);
 practiceFile.push("hello");
 //Use a single .push() to add the following items: false, -4.6, and "87".  Print the array to confirm the changes.
 practiceFile.push(false, -4.6, "87");
+console.log(practiceFile);
