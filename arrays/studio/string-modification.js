@@ -20,3 +20,4 @@ if (numLetters <= str.length) {
     console.log()
 } else console.log('too many letters, defaulted to 3')
     console.log(str.charAt.slice(3)) + 
+    //not done. Confused by validation
