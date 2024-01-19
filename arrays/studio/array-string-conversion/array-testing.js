@@ -30,10 +30,11 @@ function semiDash() {
 
 //4)
 function reverseSpaces() {
-	let check;
+	let check = strings[2];
 	let output;
   //TODO: write the code required for this step
-
+  if(check.includes(' ')) {
+	output = check.split(' ').sort().join(' ');
 	return output;
 }
 
