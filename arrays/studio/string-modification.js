@@ -13,11 +13,14 @@ if (strModified <= str.length) {
     console.log("Accepted");
 } else if (strModified > str.length) {
     console.log("Too long");
-}
+    let newWord = str.slice(strModified) + str.slice(0, strModified);
+    console.log(newWord);
+} 
 //3) Add validation to your code to deal with user inputs that are longer than the word. In such cases, default to moving 3 characters. Also, the template literal should note the error.
-if (numLetters <= str.length) {
+/*if (numLetters <= str.length) {
     let newWord = str.slice(numLetters) + str.slice(0, numLetters);
     console.log()
 } else console.log('too many letters, defaulted to 3')
     console.log(str.charAt.slice(3)) + 
     //not done. Confused by validation
+    */
