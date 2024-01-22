@@ -38,3 +38,16 @@ Construct ``for`` loops to accomplish the following tasks:
 /*Exercise #3:Construct a for loop that sorts the array [2, 3, 13, 18, -5, 38, -10, 11, 0, 104] into two new arrays:
   a. One array contains the even numbers, and the other holds the odds.
   b. Print the arrays to confirm the results. */
+
+  let numbers = [2, 3, 13, 18, -5, 38, -10, 11, 0, 104];
+  let evens = [];
+  let odds = [];
+  for (let i = 0; i < numbers.length; i++) {
+    if(numbers[i] % 2 === 0) {
+      evens.push(numbers[i]);
+    } else {
+      odds.push(numbers[i]);
+    }
+  }
+  console.log("Evens:", evens);
+  console.log("Odds", odds);
