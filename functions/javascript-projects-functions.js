@@ -5,17 +5,16 @@ for (let i=0; i < size; i++) {
 }
 return line;
 }
-console.log(makeLine(10));
+//console.log(makeLine(10));
 
 
 //MAKE SQUARE SIZE
 function makeSquare(size) {
     let square = '';
-for (i=0; i < size; i++) {
-    square += (makeSquare(size) + '\n');
+    square += (makeRectangle(size,size));
+return square
 }
-}
-
+console.log(makeSquare(4));
  
 //MAKE RECTANGLE HEIGHT AND WIDTH
 function makeRectangle(width, height) {
