@@ -1,5 +1,4 @@
 const input = require('readline-sync');
-
 function getValidInput(prompt, isValid) {
     
     let userInput = input.question(prompt);
@@ -20,13 +19,13 @@ let startsWithA = function(input)  {
 // TODO 2: write a validator 
 // that ensures input is a vowel
 let isVowel = function(input) {
-  return ['a', 'e', 'i', 'o','u'].indexOf(input.toLowerCase());
+  return ['a', 'e', 'i', 'o','u'].includes(input.toLowerCase());
 }
 let isValidPasword = function(password){
-  if (password.length < 8) {
-    return false;
+  if (password.length >= 8 && isVowel(password[0])) {
+    return true;
   }
-  else return true;
+  else return false;
 }
 // Be sure to test your code!
 console.log(getValidInput('Create a password:', isValidPasword));
