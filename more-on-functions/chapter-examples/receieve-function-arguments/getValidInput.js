@@ -15,7 +15,7 @@ function getValidInput(prompt, isValid) {
 // TODO 1: write a validator 
 // that ensures input starts with "a"
 let startsWithA = function(input)  {
-  return input.toLowerCase().startsWithA("a");
+  return input.toLowerCase().startsWith("a");
 };
 // TODO 2: write a validator 
 // that ensures input is a vowel
