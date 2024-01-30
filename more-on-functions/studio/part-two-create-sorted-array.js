@@ -27,7 +27,11 @@ return sortedArray;
 6) Be sure to print the results in order to verify your code.*/
 
 //Your function here...
+let unsortedArray = [5, 10, 2, 42];
+let sortedArray = selectSort(unsortedArray);
 
+console.log("Original Array:", unsortedArray);
+console.log("Sorted Array:", sortedArray);
 /* BONUS MISSION: Refactor your sorting function to use recursion below:
  */
 
