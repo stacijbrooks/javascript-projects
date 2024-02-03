@@ -37,3 +37,11 @@ for (let i = 0; i<prompts.length; i++){
     console.log("Option skipped.");
   }
 }
+const input = require('readline-sync');
+const averages = require('./averages.js');
+const studentAverage = averages.averageForStudent(nameIndex,scores);
+const testAverage = averages.averageForTest(testIndex,scores);
+const printAll = require('./display.js');
+const randomSelect = require('./randomSelect.js');
+
+printAll(astronauts, testTitles, scores);
