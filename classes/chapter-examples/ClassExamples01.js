@@ -12,8 +12,8 @@ let fox = new Astronaut('Fox', 7, 12);
 console.log(fox);
 console.log(fox.age, fox.color);
 
-fox.age = 9;
-fox.color = 'red';
+Astronaut.age = 9;
+Astronaut.color = 'red';
 
 console.log(fox);
 console.log(fox.age, fox.color);
