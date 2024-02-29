@@ -9,7 +9,38 @@
   </head>
   <body>
     <!-- TODO: add form here -->
+    <h1>Rocket Simulation Form</h1>
+    <form method="POST" action="https://handlers.education.launchcode.org/request-parrot">
+      <label for="testName">Test Name:</label><br>
+      <input type="text" id="testName" name="testName" required><br><br>
+      
+      <label for="testDate">Test Date:</label><br>
+      <input type="date" id="testDate" name="testDate" required><br><br>
+      
+      <label for="rocketType">Rocket Type:</label><br>
+      <select id="rocketType" name="rocketType" required>
+        <option value="Brant">Brant</option>
+        <option value="Lynx">Lynx</option>
+        <option value="Orion">Orion</option>
+        <option value="Terrier">Terrier</option>
+      </select><br><br>
+
+      <label for="boosterCount">Number of Rocket Boosters:</label><br>
+    <input type="number" id="boosterCount" name="boosterCount" required min="1" max="9"><br><br>
     
+    <label for="windRating">Wind Rating:</label><br>
+    <input type="radio" id="noWind" name="windRating" value="0" required>
+    <label for="noWind">No Wind</label><br>
+    <input type="radio" id="mildWind" name="windRating" value="10">
+    <label for="mildWind">Mild Wind</label><br>
+    <input type="radio" id="strongWind" name="windRating" value="20">
+    <label for="strongWind">Strong Wind</label><br><br>
+    
+    <label for="productionServers">Use production grade servers:</label><br>
+    <input type="checkbox" id="productionServers" name="productionServers"><br><br>
+    
+    <input type="submit" value="Submit">
+  </form>
 
     <p>WARNING: This ONLY works in <b>replit</b> if this "result" page is opened in its own window. Click the icon that shows a box with an arrow coming out of it.
     </p>
