@@ -20,7 +20,8 @@ window.addEventListener('load', function() {
 
     //BONUS MISSION 2
          let activeClass = astronaut.active ? "active" : "";
-
+         
+//Back to regular code
             container.innerHTML += `
                 <div class="astronaut">
                 <div class="bio">
